@@ -9,9 +9,25 @@
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        caption{
+            font-size: 1.5em;
+            background-color: rgb(64, 63, 63);
+            color: white;
+            padding: 15px;
+        }
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+       thead > tr > th{
+            background-color: rgb(64, 63, 63);;
+            position: sticky;
+            top: 0;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(181, 162, 162);
+
         }
         thead,tfoot{
             background-color: gray;
@@ -20,7 +36,7 @@
         th,td{
             border: 1px solid black;
             padding: 10px;
-           
+            
         }
 
 
@@ -31,9 +47,10 @@
 <body>
     
     <table>
+        <caption>População da população federativa</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr><td>São Paulo</td>
@@ -49,18 +66,65 @@
                 <td>2540987</td>
             </tr>
             <tfoot>
-                <tr>
-                    <th>Total</th>
-                  
-                        <td><strong>1000000</strong></td>
+                
+                <tr><td>São Paulo</td>
+                    <td>49540987</td>
                 </tr>
+                
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>25540987</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>2540987</td>
+                </tr>
+                <tfoot>
+                    
+                    <tr><td>São Paulo</td>
+                        <td>49540987</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td>25540987</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td>2540987</td>
+                    </tr>
+                    <tfoot>
+                        <tr><td>São Paulo</td>
+                            <td>49540987</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Minas Gerais</td>
+                            <td>25540987</td>
+                        </tr>
+                        <tr>
+                            <td>Rio de Janeiro</td>
+                            <td>2540987</td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td><strong>1000000</strong></td>
+                            </tr>
             </tfoot>
 
         </tbody>
-
-
-
-
     </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos temporibus, repellendus eius maxime modi dolor neque autem aspernatur incidunt hic obcaecati earum suscipit a consequuntur delectus officiis aliquid rem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, magnam. Adipisci doloribus ullam veniam repellat enim. Corporis, veritatis quisquam. Odit vitae quas commodi reiciendis molestiae iste dolore ab amet vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eum dignissimos nam laborum, vero inventore adipisci unde dolores perspiciatis nemo architecto, magni quasi corporis minus facilis, vitae neque nihil voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates quos autem explicabo magni dolorum nesciunt blanditiis officia porro cum. Maiores ea nobis assumenda iure cum ratione nesciunt deserunt sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia. Autem saepe doloribus accusantium, natus quas, ratione ullam, architecto aliquid est incidunt corrupti dolore corporis. Sapiente impedit beatae nam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis explicabo minima voluptas quasi, optio iusto voluptatum nulla possimus qui quaerat, saepe, numquam porro reiciendis cum dolorum minus ut itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci inventore sunt accusantium dolor sit, tenetur in necessitatibus velit corporis voluptatum recusandae possimus ducimus vel esse sequi numquam, doloremque consequatur?</p>
+
+
+
+ 
 </body>
 </html>
