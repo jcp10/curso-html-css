@@ -47,8 +47,44 @@
             <input type="checkbox" name="futebol" id="ifut"><label for="ifut"> Futebol</label>
             <input type="checkbox" name="basquete" id="ibasq"><label for="ibasq">Basquete</label>
         </fieldset>
+        <div>
+            <label for="icor">Escolha a cor</label>
+            <input type="color" name="cor" id="icor">
+        </div>
+
+        <div>
+            <label for="isast">Selecione a satisfação</label>
+            <input type="range" min="0" max="10">
+        </div>
+        <div>
+            <label for="iimg">Imagem</label>
+            <input type="file" name="foto" id="iimg">
+        </div>
+
+        <div>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>Selecione</option>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+
+        </div>
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" nome="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">Admnistrador</option>
+                <option value="Contador">Contador</option>
+            </datalist>
+        </div>
+        <div>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
 
 
+        </div>
         <div>
             <input type="submit" value="Cadastrar">
             <input type="reset" value="Cancelar">
