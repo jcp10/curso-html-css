@@ -8,8 +8,21 @@
 </head>
 <body>
     <div>
-        
+        <label for="in1">Numero 1</label>
+        <input type="number" name="n1" id="in1" oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)">
     </div>
-    
+    <br>
+    <div>
+        <label for="in2">Numero 2</label>
+        <input type="number" name="n2" id="in2" oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)">
+    </div>
+<br><br>
+    <div>
+        <label for="isoma">Total</label>
+        <output name="soma" id="isoma">0</output>
+    </div>
+
+
+
 </body>
 </html>
